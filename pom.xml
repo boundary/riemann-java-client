@@ -94,11 +94,20 @@
         </plugins>
     </build>
 
-    <distributionManagement>
-      <repository>
-        <id>clojars.org</id>
-        <name>Clojars</name>
-        <url>https://clojars.org/repo</url>
-      </repository>
-    </distributionManagement>
+  <distributionManagement>
+    <repository>
+      <id>maven.boundary.com</id>
+      <name>maven.boundary.com-releases</name>
+      <url>http://maven.boundary.com/artifactory/external</url>
+    </repository>
+    <snapshotRepository>
+      <id>maven.boundary.com</id>
+      <name>maven.boundary.com-snapshots</name>
+      <url>http://maven.boundary.com/artifactory/external</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <scm>
+    <connection>scm:git:git@github.com:boundary/riemann-java-client.git</connection>
+  </scm>
 </project>
