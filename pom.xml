@@ -13,6 +13,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <protobuf.version>2.5.0</protobuf.version>
     <protoc.path>protoc</protoc.path>
   </properties>
 
@@ -20,7 +21,7 @@
     <dependency>
       <groupId>com.google.protobuf</groupId>
       <artifactId>protobuf-java</artifactId>
-      <version>2.5.0</version>
+      <version>${protobuf.version}</version>
       <scope>compile</scope>
     </dependency>
     <!-- TEST DEP's -->
