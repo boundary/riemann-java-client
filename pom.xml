@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.aphyr</groupId>
   <artifactId>riemann-java-client</artifactId>
-  <version>0.0.5-p01</version>
+  <version>0.0.5-p02-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>Riemann Java Client</name>
   <description>Java client for http://aphyr.github.com/riemann/</description>
@@ -31,10 +31,16 @@
       <version>4.10</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>1.7.6</version>
+      <scope>test</scope>
+    </dependency>
         <dependency>
             <groupId>com.yammer.metrics</groupId>
             <artifactId>metrics-core</artifactId>
-            <version>2.1.2</version>
+            <version>2.2.0</version>
         </dependency>
     </dependencies>
 
@@ -91,6 +97,20 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
         </plugins>
     </build>
 

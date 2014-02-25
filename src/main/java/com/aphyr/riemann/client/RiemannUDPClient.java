@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.net.*;
 
 import com.aphyr.riemann.Proto.Msg;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 public class RiemannUDPClient extends AbstractRiemannClient {
     protected static final int MAX_SIZE = 16384;
@@ -40,12 +39,12 @@ public class RiemannUDPClient extends AbstractRiemannClient {
 
     @Override
     public Msg recvMessage() throws IOException {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public Msg sendRecvMessage(Msg message) throws IOException {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     @Override

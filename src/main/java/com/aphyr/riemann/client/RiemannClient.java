@@ -5,7 +5,6 @@ import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.UnknownHostException;
 import com.aphyr.riemann.Proto.Msg;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 // A hybrid UDP/TCP client.
 public class RiemannClient extends AbstractRiemannClient {
@@ -39,12 +38,12 @@ public class RiemannClient extends AbstractRiemannClient {
 
     @Override
     public void sendMessage(Msg message) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public Msg recvMessage() {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     @Override
